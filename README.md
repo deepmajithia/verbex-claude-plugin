@@ -1,10 +1,23 @@
-# Verbex Lab Tools for Claude
+# Verbex Lab Tools
+
+Wet-lab calculations and lab documentation for AI assistants: Claude, Cursor, Grok Build and any MCP client.
 
 Exact answers to the calculations and paperwork of wet-lab work, right in the chat.
 
-Ask Claude how much to weigh for a molar solution, how much stock to dilute, or how to plan a serial dilution, a PCR or qPCR master mix, a lipid nanoparticle (LNP) formulation or a 6- to 384-well plate layout. Each result shows the mass or volumes to use with a drawing of the bench step, the formula, and a check that back-calculates the answer, ready to copy into a lab notebook. The numbers come from deterministic code, so the same inputs always give the same answer.
+Ask your assistant how much to weigh for a molar solution, how much stock to dilute, or how to plan a serial dilution, a PCR or qPCR master mix, a lipid nanoparticle (LNP) formulation or a 6- to 384-well plate layout. Each result shows the mass or volumes to use with a drawing of the bench step, the formula, and a check that back-calculates the answer, ready to copy into a lab notebook. The numbers come from deterministic code, so the same inputs always give the same answer.
 
 The plugin also finds 16 editable lab documentation templates (Word and Excel, CC BY 4.0) and practical guides on SOPs, lab notebooks, inventory and data integrity, builds protocol and lab notebook entry templates, and turns reagent label text into a materials table.
+
+## Install
+
+| Client | How |
+|---|---|
+| Claude Code | Add it as a plugin from this repository (Claude directory listing in review) |
+| Cursor | Copy this repository to `~/.cursor/plugins/local/verbex-lab-tools` and reload Cursor (Cursor Marketplace listing in review) |
+| Grok Build | Add the MCP server below (xAI plugin marketplace listing in review) |
+| Any MCP client | Add `https://www.verbalexperiment.com/mcp` as a remote MCP server (Streamable HTTP, no sign-in) |
+
+The same plugin works in each: `.claude-plugin/`, `.cursor-plugin/` and `.grok-plugin/` hold each client's manifest, `.mcp.json` and `mcp.json` point at the same server, and `skills/` is shared.
 
 ## What's inside
 
